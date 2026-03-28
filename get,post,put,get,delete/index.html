@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wireframe-container">
+        <div class="method-row">
+            <button class="method-btn" data-method="GET">GET</button>
+            <button class="method-btn" data-method="POST">POST</button>
+            <button class="method-btn" data-method="PUT">PUT</button>
+            <button class="method-btn" data-method="PATCH">PATCH</button>
+            <button class="method-btn" data-method="DELETE">DELETE</button>
+        </div>
+
+        <div class="workspace">
+            <div class="input-column">
+                <div class="field">
+                    <label>id</label>
+                    <input type="text" id="inputId">
+                </div>
+                <div class="field">
+                    <label>Name</label>
+                    <input type="text" id="inputName">
+                </div>
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" id="inputUser">
+                </div>
+                <div class="field">
+                    <label>email</label>
+                    <input type="text" id="inputEmail">
+                </div>
+                <div class="field">
+                    <label>address</label>
+                    <input type="text" id="inputAddress">
+                </div>
+
+                <button id="submitBtn" class="action-btn">add</button>
+            </div>
+
+            <div class="display-box">
+                <pre id="jsonOutput">// Response data will appear here...</pre>
+            </div>
+        </div>
+
+        <div class="status-footer">
+            <span id="statusCode">Status: ---</span>
+            <span id="statusText"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
